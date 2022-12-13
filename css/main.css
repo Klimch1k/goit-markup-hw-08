@@ -16,11 +16,21 @@ body {
 
 /* Контейнер */
 .conteiner {
-  width: 1200px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .conteiner {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    max-width: 1200px;
+  }
 }
 
 /* Скидування дефолтних стилів та задання глобальних стилів */
@@ -65,8 +75,14 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 a {
@@ -319,15 +335,40 @@ a {
 }
 
 .decisions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  display: block;
 }
-.decisions__item:not(:first-child) {
-  margin-left: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .decisions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .decisions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .decisions__item:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .decisions__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .decisions__item {
+    max-width: 354px;
+  }
 }
 
 .decisions__icon {
@@ -347,7 +388,6 @@ a {
 }
 
 .decisions__title {
-  margin-top: 0px;
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 16px;
@@ -355,10 +395,13 @@ a {
   text-transform: uppercase;
   color: var(--title-color);
 }
+@media screen and (max-width: 767px) {
+  .decisions__title {
+    text-align: center;
+  }
+}
 
 .decisions__text {
-  margin-top: 0px;
-  margin-bottom: 0px;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
