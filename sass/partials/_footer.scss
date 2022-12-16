@@ -6,34 +6,63 @@
 /* ЛОГО ФУТЕРУ */
 .logo--end {
   display: inline-block;
-  margin-right: auto;
 
   font-family: "Raleway", "Roboto", "Athelas", "Arial", sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: #2196f3;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    margin-right: auto;
+  }
 }
 .logo__studio--end {
   color: #ffffff;
 }
 /* Адреса телефон та мейл футеру */
 .site-end__position {
-  display: flex;
-  align-items: baseline;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 .end-nav {
-  margin-right: 70px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 .address {
-  margin-top: 20px;
-  margin-bottom: 0px;
-  margin-right: auto;
-  padding-left: 0px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
 
   &__item:not(:last-child) {
     margin-bottom: 9px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
   }
 }
 
@@ -65,8 +94,17 @@
   color: var(--main-color);
 }
 
+.networks__position {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+  }
+}
+
 .networks-footer__title {
-  margin-top: 0px;
   margin-bottom: 20px;
 
   font-size: 14px;
@@ -90,7 +128,33 @@
 }
 
 .form-footer {
-  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
+.form-footer__position {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+.form-footer__label {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .form-footer__title {
@@ -105,9 +169,9 @@
 }
 
 .form-footer__mail {
-  width: 358px;
   min-height: 50px;
   padding-left: 16px;
+  width: 100%;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -117,6 +181,10 @@
   outline: none;
 
   transition: border-color 250ms var(--timing-function);
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 
   &::placeholder {
     padding-top: 15px;
