@@ -19,18 +19,19 @@
 
 /* Навігація сайту */
 .site-nav {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  display: none;
 
-&__item:not(:last-child) {
-  margin-right: 50px;
-}
-}
+  //   display: flex;
+  //   padding-top: 32px;
+  //   padding-bottom: 32px;
+  //   padding-left: 0px;
+  //   margin-top: 0px;
+  //   margin-bottom: 0px;
 
+  // &__item:not(:last-child) {
+  //   margin-right: 50px;
+  // }
+}
 
 .site-nav__link {
   transition: color 250ms var(--timing-function);
@@ -40,46 +41,47 @@
 
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14x;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
 
-&:hover,
-&:focus {
-  color: #2196f3;
-}
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
 }
 
 .current {
   position: relative;
   color: var(--accent-color);
-  
- &::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
 
-  position: absolute;
-  bottom: -12px;
-  left: 0;
-  background-color: #2196f3;
-  border-radius: 2px;
-}
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    background-color: #2196f3;
+    border-radius: 2px;
+  }
 }
 
 /* Телефон та мейл */
 .auth-nav {
-  display: flex;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: auto;
+  display: none;
 
-  &__item:not(:first-child) {
-  margin-left: 50px;
-}
-}
+  //   display: flex;
+  //   margin-top: 0px;
+  //   margin-bottom: 0px;
+  //   margin-left: auto;
 
+  //   &__item:not(:first-child) {
+  //   margin-left: 50px;
+  // }
+}
 
 .auth-nav__link {
   transition: color 250ms var(--timing-function);
@@ -96,14 +98,14 @@
   letter-spacing: 0.02em;
   color: var(--main-color);
 
- &:hover,
-&:focus {
-  color: var(--accent-color);
-}
- &:hover .auth-nav__icon,
-&:focus .auth-nav__icon {
-  fill: var(--accent-color);
-}
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &:hover .auth-nav__icon,
+  &:focus .auth-nav__icon {
+    fill: var(--accent-color);
+  }
 }
 
 .auth-nav__icon {
