@@ -31,17 +31,29 @@
     align-items: center;
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
   }
 }
 .end-nav {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 165px;
+    margin-bottom: 60px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -49,7 +61,7 @@
   }
 }
 .address {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,7 +107,7 @@
 }
 
 .networks__position {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,7 +150,7 @@
   }
 }
 .form-footer__position {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,7 +159,7 @@
   }
 }
 .form-footer__label {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,6 +194,10 @@
 
   transition: border-color 250ms var(--timing-function);
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 358px;
   }
@@ -202,7 +218,6 @@
 }
 
 .footer-btn {
-  margin-left: 12px;
   padding-top: 10px;
   padding-right: 28px;
   padding-bottom: 10px;
@@ -226,6 +241,10 @@
   &:hover,
   &:focus {
     background-color: #188ce8;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
   }
 }
 

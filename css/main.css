@@ -740,6 +740,21 @@ a {
             align-items: center;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .site-end__position {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 @media screen and (min-width: 1200px) {
   .site-end__position {
     display: -webkit-box;
@@ -751,7 +766,7 @@ a {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .end-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -768,13 +783,19 @@ a {
             align-items: center;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .end-nav {
+    margin-right: 165px;
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .end-nav {
     margin-right: 70px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .address {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -826,7 +847,7 @@ a {
   color: var(--main-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .networks__position {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -880,7 +901,7 @@ a {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .form-footer__position {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -899,7 +920,7 @@ a {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .form-footer__label {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -942,6 +963,11 @@ a {
   outline: none;
   -webkit-transition: border-color 250ms var(--timing-function);
   transition: border-color 250ms var(--timing-function);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form-footer__mail {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form-footer__mail {
@@ -993,7 +1019,6 @@ a {
 }
 
 .footer-btn {
-  margin-left: 12px;
   padding-top: 10px;
   padding-right: 28px;
   padding-bottom: 10px;
@@ -1016,6 +1041,11 @@ a {
 }
 .footer-btn:hover, .footer-btn:focus {
   background-color: #188ce8;
+}
+@media screen and (min-width: 1200px) {
+  .footer-btn {
+    margin-left: 12px;
+  }
 }
 
 .footer-btn__text {
